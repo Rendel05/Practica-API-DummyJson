@@ -165,7 +165,7 @@
 			const btnDelete = e.target.closest(".btn-delete");
 
 			if (btnEdit) {
-				window.location.href = `Editar.html?id=${producto.id}`;
+				window.location.href = `editar.html?id=${producto.id}`;
 			}
 
 			if (btnDelete) {
