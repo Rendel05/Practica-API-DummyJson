@@ -298,6 +298,8 @@
 		.then((respuesta)=>respuesta.json())
 		.then(producto=>{
 			console.log(producto)
+			 mostrarMensaje("Producto creado correctamente", "exito");
+			
 		})
 	}
 
