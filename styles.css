@@ -102,11 +102,47 @@ button {
     background-color: white;
     border-radius: 8px;
     width: 280px;
-    padding: 16px;
     text-align: left;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
+    overflow: hidden; 
 }
+
+.card-body {
+    padding: 16px;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.card-footer button {
+	flex:1;     
+    margin: 0 5px;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.card-footer button{
+	transition: transform .2s;
+	transition-timing-function: ease-in-out;
+}
+.card-footer .btn-edit:hover{
+	background: #2196F3 !important;
+	transform: scale(1.05);
+}
+.card-footer .btn-delete:hover{
+	background: #F54927 !important;
+	transform: scale(1.05);
+}
+
 
 .card:hover {
     transform: translateY(-5px);
@@ -176,7 +212,22 @@ button {
   color: var(--orange-dark);
 }
 
-
+#btn-anterior{
+    transition: transform .2s;
+	transition-timing-function: ease-in-out;
+}
+#btn-siguiente{
+    transition: transform .2s;
+	transition-timing-function: ease-in-out;
+}
+#btn-anterior:hover{
+    background: var(--orange-low);
+	transform: scale(1.2);  
+}
+#btn-siguiente:hover{
+	background: var(--orange-low);
+	transform: scale(1.2);  
+}
 #contenido button{
 	  display: inline-block;
       padding: 6px 10px;
@@ -187,18 +238,31 @@ button {
       color: #333;
 }
 
-#contenido button:hover{
-      background: var(--orange-low);
-	  transform: scale(1.2);
-}
-#contenido button{
-    transition: transform .2s;
-	transition-timing-function: ease-in-out;
-}
 
 .paginacion {
       text-align: center;
       margin: 2rem 0;
     }
     
-
+.subnav {
+  background: #fff;
+  border-bottom: 2px solid var(--orange);
+  padding: 6px 6px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  font-weight: 300;
+  
+}
+.subnav a {
+  color: var(--muted);
+  text-decoration: none;
+  transition: 0.2s;
+}
+.subnav a:hover {
+	
+  color: var(--orange-dark);
+}
+.subnav p{
+color: var(--orange-dark);
+}
